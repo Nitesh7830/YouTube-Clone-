@@ -2,6 +2,7 @@ import React from 'react'
 import { HamBurger_Btn, LOGO_URL, User_Icon } from '../Utils/Constants'
 import { useDispatch } from 'react-redux'
 import { toggleMenu } from '../Utils/appSlice'
+import { Link } from 'react-router-dom'
 
 const Head = () => {
     const dispatch = useDispatch()

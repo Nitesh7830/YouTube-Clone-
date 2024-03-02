@@ -29,7 +29,6 @@ const appRouter = createBrowserRouter([{
 function App() {
   return (
     <Provider store={store}>
-      {console.log(store.isMenueOpen)}
       <div>
         <Head />
         <RouterProvider router={appRouter} />
