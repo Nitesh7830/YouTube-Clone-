@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { YouTube_API } from "../Utils/Constants";
 import { addLandingPageVideos } from "../Utils/videoSlice";
 

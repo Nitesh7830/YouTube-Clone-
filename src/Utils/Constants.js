@@ -9,3 +9,6 @@ const Youtube_Api_Key = "AIzaSyCd24N2uByenSzqPKcMSoVm-173DErLAuw"
 export const YouTube_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=70&nextPageToken='CDIQAA'&regionCode=In&key=" + Youtube_Api_Key
 
 export const YouTube_Video_comment_Api = "https:/youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=" + Youtube_Api_Key + "&videoId="
+
+//This qpi give info about particular video
+// export const YouTube_sinleVideo_info_Api = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=" + Youtube_Api_Key + "&id=VlVJjtid6r8";
