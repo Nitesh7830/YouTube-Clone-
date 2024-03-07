@@ -4,7 +4,11 @@ const Videocard = ({ info }) => {
 
         <div className='shadow-lg w-[325px] cursor-pointer m-2 rounded-lg'>
             <div className=" bg-white rounded-lg">
-                <img className='rounded-lg hover:rounded-none' src={info?.snippet?.thumbnails?.maxres?.url} />
+                <img
+                    className={`rounded-lg hover:rounded-none`}
+                    src={info?.snippet?.thumbnails?.medium?.url}
+                    alt="Description of"
+                />
             </div>
             <ul className='p-1'>
                 <li className='p-2 font-bold'>{info?.snippet?.title} </li>

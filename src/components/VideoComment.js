@@ -11,10 +11,12 @@ const VideoComment = ({ video }) => {
     return (
         <div className='p-5 w-[1000px] shadow-sm'>
             <div className='flex'>
-                <img className='rounded-full' alt='img_URL' src={video?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl} />
-                <h5 className='font-mono font-bold mt-4 ml-5'>{video?.snippet?.topLevelComment?.snippet?.authorDisplayName}</h5>
+                <img className='rounded-full h-11' alt='img_URL' src={video?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl} />
+                <div>
+                    <h5 className='font-mono font-bold mt-1 ml-4'>{video?.snippet?.topLevelComment?.snippet?.authorDisplayName}</h5>
+                    <h6 className='ml-4 mb-2'>{video?.snippet?.topLevelComment?.snippet?.textDisplay}</h6>
+                </div>
             </div>
-            <h6 className='px-16 mb-3'>{video?.snippet?.topLevelComment?.snippet?.textDisplay}</h6>
         </div>
 
     )

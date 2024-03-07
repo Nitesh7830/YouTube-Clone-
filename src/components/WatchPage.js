@@ -9,9 +9,7 @@ import { useState } from 'react';
 const WatchPage = () => {
     const [showComments, setshowComments] = useState(true)
     const fnshowComments = () => {
-        console.log('before click', showComments)
         setshowComments(!showComments)
-        console.log('after click', showComments)
     }
 
     useLandingpageVideo();

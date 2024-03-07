@@ -2,7 +2,7 @@ import React from 'react'
 
 const Suggestion = ({ suggestion }) => {
     return (
-        <div className='absolute w-[480px]  mt-1 shadow-md z-10 rounded-lg bg-slate-100' >
+        <div className='absolute w-[590px]  mt-1 shadow-md z-10 rounded-lg bg-slate-100' >
             <ul>
                 {suggestion.map((s) => (
                     <li key={s} className='flex hover:bg-slate-300 rounded-sm cursor-default p-2 border-gray-100'>

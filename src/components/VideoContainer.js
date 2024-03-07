@@ -8,6 +8,7 @@ import useVideosComments from '../hooks/useVideosComments';
 const VideoContainer = () => {
     useLandingpageVideo()
     const videos = useSelector((store) => store.video.landingPageVideos)
+    console.log(videos)
     return (
         <div className='flex flex-wrap'>
             {videos?.map(video => <Link to={"/watch?v=" + video.id} key={video.id}> < Videocard info={video} /></Link>)}
