@@ -10,5 +10,4 @@ export const YouTube_API = "https://youtube.googleapis.com/youtube/v3/videos?par
 
 export const YouTube_Video_comment_Api = "https:/youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=" + Youtube_Api_Key + "&videoId="
 
-//This qpi give info about particular video
-// export const YouTube_sinleVideo_info_Api = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=" + Youtube_Api_Key + "&id=VlVJjtid6r8";
+export const Youtub_suggestion_APi = "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="

@@ -31,3 +31,12 @@
 
 # import react router dom lib 
     - create routes for navigation 
+
+# Building search functionality 
+    - search caontain suggestion 
+        -for suggestion api call happen which gives response suggestion 
+        -On every key press there is an api call 
+        - difference between the two keypress is 200ms then make api call it will help to elimniate the debouncing 
+        - time between two alternative api call is known debouncing 
+    - How search is working under the hood
+        ![alt text](https://app.eraser.io/workspace/Coriha94OMN2AE4I9Z83?elements=vEf4WlIgrwj9GlEXuP-rdg)
