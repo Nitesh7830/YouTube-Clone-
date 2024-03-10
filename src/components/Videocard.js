@@ -2,7 +2,7 @@ import React from 'react'
 const Videocard = ({ info }) => {
     return (
 
-        <div className='shadow-lg w-[325px] cursor-pointer m-2 rounded-lg'>
+        <div className='shadow-lg w-[325px] cursor-pointer m-2 rounded-lg h-[324px]'>
             <div className=" bg-white rounded-lg">
                 <img
                     className={`rounded-lg hover:rounded-none`}

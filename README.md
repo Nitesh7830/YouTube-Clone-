@@ -55,4 +55,11 @@
 
     -Build search slice inside the store and put the value of the search result inside the slice
 
+# Building live chat feature
 
+    - live chat is used api pooling
+    - Create Chat section component
+    - make api call using api poolin
+    - build chat slice for the storing message
+    - store the api data in the store
+    - suscribe the stroe and bring data from the store

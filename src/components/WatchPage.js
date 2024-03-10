@@ -4,7 +4,8 @@ import { useSelector } from 'react-redux'
 import useVideosComments from '../hooks/useVideosComments';
 import VideoComment from './VideoComment';
 import useLandingpageVideo from '../hooks/useLandingPageVideo';
-import { useState } from 'react';
+import LiveChat from './LiveChat';
+import { useEffect, useState } from 'react';
 
 const WatchPage = () => {
     const [showComments, setshowComments] = useState(true)
@@ -23,32 +24,47 @@ const WatchPage = () => {
         .filter((value) => value.id === searchValue)
         .map((filteredVideo) => filteredVideo.snippet))?.[0] || {};
     return (
-        <div className='p-5 shadow-lg'>
-            <div>
-                <iframe
-                    className='rounded-lg '
-                    width="1000"
-                    height="500"
-                    src={"https://www.youtube.com/embed/" + searchValue}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
-            </div>
-            <div className='p-2 m-2 text-lg font-serif font-bold'>
-                <h1>{titles}</h1>
-                <h5>{channelTitle}</h5>
-            </div>
-            {<hr />}
-            <div className='border-2'>
-                <div className='flex justify-between p-2 shadow-md bg-slate-300'>
-                    <div className='font-bold font-sans'>Comments</div>
-                    <div><button onClick={fnshowComments}>{showComments === false ? '⬇️' : '⬆️'}</button></div>
+        <>
+            <div className='p-5 shadow-lg w-full bg-slate-100'>
+                <div className='w-full flex '>
+                    <div>
+                        <iframe
+                            className='rounded-lg '
+                            width="1000"
+                            height="500"
+                            src={"https://www.youtube.com/embed/" + searchValue}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                        <div className='p-2 m-2 text-lg font-serif font-bold'>
+                            <h1>{titles}</h1>
+                            <h5>{channelTitle}</h5>
+                        </div>
+                    </div>
+                    <div className='w-full border border-black ml-3 mr-2 pt-1 rounded-lg'>
+                        <LiveChat />
+
+                    </div>
                 </div>
-                {showComments && comments?.map((cmt) => <VideoComment key={cmt.id} video={cmt} />)}
+                {<hr />}
+                <div className='flex'>
+                    <div className='border-2 min-w-[1000px]'>
+                        <div className='flex justify-between p-2 shadow-md bg-slate-300'>
+                            <div className='font-bold font-sans'>Comments</div>
+                            <div><button onClick={fnshowComments}>{showComments === false ? '⬇️' : '⬆️'}</button></div>
+                        </div>
+                        {showComments && comments?.map((cmt) => <VideoComment key={cmt.id} video={cmt} />)}
+                    </div>
+                    <div>
+                        <div>
+                            Videos list
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div >
+        </>
     )
 }
 

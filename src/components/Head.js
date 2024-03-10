@@ -54,7 +54,7 @@ const Head = () => {
     };
     return (
         <div className="grid grid-flow-col p-2 shadow-lg ">
-            {/*Left panner */}
+            {/*Left pannel */}
             <div className="flex col-span-2 ">
                 <img
                     alt="hamburgerImg"
@@ -65,7 +65,7 @@ const Head = () => {
                 <img alt="Youtube_log" className="w-15 h-12" src={LOGO_URL} />
             </div>
 
-            {/*Center panner */}
+            {/*Center pannel */}
             <div className="col-span-6 flex">
                 <div className="relative w-8/12">
                     <div className="relative">
@@ -116,7 +116,7 @@ const Head = () => {
                 <div></div>
             </div>
 
-            {/*Right panner */}
+            {/*Right pannel */}
             <div className="w-12 h-12 col-span-1">
                 <img alt="user_img" src={User_Icon} />
             </div>

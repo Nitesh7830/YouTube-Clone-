@@ -11,3 +11,5 @@ export const YouTube_API = "https://youtube.googleapis.com/youtube/v3/videos?par
 export const YouTube_Video_comment_Api = "https:/youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=" + Youtube_Api_Key + "&videoId="
 
 export const Youtub_suggestion_APi = "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
+
+export const LiveChat_count = 10;
